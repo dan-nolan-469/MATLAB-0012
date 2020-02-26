@@ -1,0 +1,18 @@
+function Function3(data)
+Sorted=sort(data);
+subplot(1,3,1)
+plot(Sorted,'oY')
+Title=input('Please input a title for your graph ','s')
+title(Title)
+X_Axis=input('What would you like to name your x axis? ','s')
+xlabel(X_Axis)
+Y_Axis=input('What would you like to label your Y axis? ','s')
+ylabel(Y_Axis)
+subplot(1,3,2)
+imread('Pic.jpg')
+subplot(1,3,3)
+histogram(Sorted,10)
+title('Histogram of Data')
+name=input('Please enter your name: ','s')
+gtext(name)
+
